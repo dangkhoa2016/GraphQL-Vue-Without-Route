@@ -1,0 +1,125 @@
+{
+  "data": {
+    "cats": {
+      "items": [
+        {
+          "id": "1",
+          "name": "Japanese Bobtail",
+          "image": "https://placekitten.com/200/204",
+          "description": "Votum capitulus ad tempus anser verbum voluptatem. Admoveo carus suadeo comparo debeo aegrus expedita correptius aeternus. Cognomen demo deporto eveniet bardus.",
+          "coat_color": "black",
+          "eye_color": "silver",
+          "breed": "Bombay",
+          "origin": "Pakistan",
+          "weight": 37.626698249951005,
+          "height": 1.718328413553536,
+          "user_id": 21,
+          "status": true,
+          "gender": "Man",
+          "updated_at": "2024-01-30 16:12:51",
+          "created_at": "2024-01-30 16:12:51",
+          "birthday": "1432278211755",
+          "owner": {
+            "name": "Adella Kohler"
+          },
+          "likes_count": 67,
+          "photos_count": 59
+        },
+        {
+          "id": "2",
+          "name": "Pixiebob",
+          "image": "https://placekitten.com/200/200",
+          "description": "Verbera vaco absens stillicidium. Combibo velit amor versus. Coerceo cuius soluta degenero praesentium spiritus advenio cavus abbas adstringo.",
+          "coat_color": "red",
+          "eye_color": "pink",
+          "breed": "Abyssinian",
+          "origin": "Anguilla",
+          "weight": 8.464088840410113,
+          "height": 3.238640495110303,
+          "user_id": 21,
+          "status": true,
+          "gender": "Androgyne",
+          "updated_at": "2024-01-30 16:12:51",
+          "created_at": "2024-01-30 16:12:51",
+          "birthday": "1671795283765",
+          "owner": {
+            "name": "Adella Kohler"
+          },
+          "likes_count": 71,
+          "photos_count": 60
+        },
+        {
+          "id": "3",
+          "name": "Savannah",
+          "image": "https://placekitten.com/200/219",
+          "description": "Conforto crur consuasor statua. Antiquus cras tremo vaco titulus sunt. Verto summopere damnatio praesentium verto alo creator totam.",
+          "coat_color": "olive",
+          "eye_color": "yellow",
+          "breed": "Korat",
+          "origin": "Philippines",
+          "weight": 14.615640202537179,
+          "height": 8.038234424311668,
+          "user_id": 21,
+          "status": true,
+          "gender": "Man",
+          "updated_at": "2024-01-30 16:12:51",
+          "created_at": "2024-01-30 16:12:51",
+          "birthday": "1238687796741",
+          "owner": {
+            "name": "Adella Kohler"
+          },
+          "likes_count": 29,
+          "photos_count": 45
+        },
+        {
+          "id": "4",
+          "name": "Scottish Fold",
+          "image": "https://placekitten.com/200/208",
+          "description": "Spiculum adfectus subito advoco tergo celebrer theologus. Repellat cauda delinquo victus conqueror decens ab adficio acies. Demonstro degusto quae blandior arma corrumpo ab.",
+          "coat_color": "purple",
+          "eye_color": "white",
+          "breed": "Sphynx",
+          "origin": "Liberia",
+          "weight": 28.688937379047275,
+          "height": 0.943806478753686,
+          "user_id": 9,
+          "status": true,
+          "gender": "Intersex person",
+          "updated_at": "2024-01-30 16:12:51",
+          "created_at": "2024-01-30 16:12:51",
+          "birthday": "1511162762696",
+          "owner": {
+            "name": "Ashlynn Streich"
+          },
+          "likes_count": 66,
+          "photos_count": 41
+        },
+        {
+          "id": "5",
+          "name": "Scottish Fold",
+          "image": "https://placekitten.com/200/211",
+          "description": "Solvo velociter animus illo alias perspiciatis. Vix creptio facere. Defendo abbas caveo desipio derideo aliqua anser.",
+          "coat_color": "grey",
+          "eye_color": "teal",
+          "breed": "American Curl",
+          "origin": "Gibraltar",
+          "weight": 36.53972768224776,
+          "height": 9.542068045120686,
+          "user_id": 9,
+          "status": true,
+          "gender": "Cisgender woman",
+          "updated_at": "2024-01-30 16:12:51",
+          "created_at": "2024-01-30 16:12:51",
+          "birthday": "1138299719016",
+          "owner": {
+            "name": "Ashlynn Streich"
+          },
+          "likes_count": 92,
+          "photos_count": 67
+        }
+      ],
+      "total_items": 221,
+      "total_pages": 45
+    }
+  }
+}

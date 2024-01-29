@@ -1,0 +1,13 @@
+{
+  "data": {
+    "decryptUserToken": {
+      "user": {
+        "id": "4",
+        "name": "KIRSTEN BRAKUS",
+        "role": "admin",
+        "email": "kirsten.brakus@gmail.com"
+      },
+      "token": "tAIBrgOdyr70aM8l6nxuAGdz3SI+CPOTeyo5PHICThI="
+    }
+  }
+}
