@@ -1,0 +1,125 @@
+{
+  "data": {
+    "catsByUserId": {
+      "items": [
+        {
+          "id": "161",
+          "name": "Scottish Fold",
+          "image": "https://placekitten.com/200/214",
+          "description": "Aeger cernuus ara incidunt. Coruscus stips spoliatio xiphias sulum aggredior aeneus angulus annus consuasor. Sordeo arbustum custodia coruscus odit cura copia.",
+          "coat_color": "yellow",
+          "eye_color": "white",
+          "breed": "Bombay",
+          "origin": "Bhutan",
+          "weight": 20.355782574042678,
+          "height": 8.992690593004227,
+          "user_id": 43,
+          "status": false,
+          "gender": "Transmasculine",
+          "updated_at": "2024-01-30 16:12:51",
+          "created_at": "2024-01-30 16:12:51",
+          "birthday": "1374013498785",
+          "owner": {
+            "name": "Quinn Trantow"
+          },
+          "likes_count": 45,
+          "photos_count": 64
+        },
+        {
+          "id": "162",
+          "name": "Norwegian Forest Cat",
+          "image": "https://placekitten.com/200/217",
+          "description": "Laudantium viscus calco ciminatio adfero vulticulus vita. Totidem deduco praesentium taceo vilicus illum. Substantia vesper amiculum cumque somniculosus.",
+          "coat_color": "azure",
+          "eye_color": "salmon",
+          "breed": "Snowshoe",
+          "origin": "Andorra",
+          "weight": 14.758139364421368,
+          "height": 8.802825948223472,
+          "user_id": 43,
+          "status": true,
+          "gender": "Intersex person",
+          "updated_at": "2024-01-30 16:12:51",
+          "created_at": "2024-01-30 16:12:51",
+          "birthday": "1553968533064",
+          "owner": {
+            "name": "Quinn Trantow"
+          },
+          "likes_count": 55,
+          "photos_count": 97
+        },
+        {
+          "id": "163",
+          "name": "American Wirehair",
+          "image": "https://placekitten.com/200/208",
+          "description": "Textilis capitulus viscus tamquam. Voveo alter tribuo adsuesco pecus chirographum. Mollitia nam abbas thorax ante terreo theca deludo.",
+          "coat_color": "black",
+          "eye_color": "blue",
+          "breed": "Manx",
+          "origin": "South Sudan",
+          "weight": 4.323396813124418,
+          "height": 2.267640170175582,
+          "user_id": 43,
+          "status": true,
+          "gender": "Trigender",
+          "updated_at": "2024-01-30 16:12:51",
+          "created_at": "2024-01-30 16:12:51",
+          "birthday": "1266514330057",
+          "owner": {
+            "name": "Quinn Trantow"
+          },
+          "likes_count": 82,
+          "photos_count": 95
+        },
+        {
+          "id": "164",
+          "name": "Pixiebob",
+          "image": "https://placekitten.com/200/212",
+          "description": "Copia curis adeo conventus adhaero territo. Nesciunt abscido in addo repellendus ullus alioqui. Contabesco voco arto adfero.",
+          "coat_color": "gold",
+          "eye_color": "cyan",
+          "breed": "Sphynx",
+          "origin": "Congo",
+          "weight": 30.88394509628415,
+          "height": 7.725852690637112,
+          "user_id": 43,
+          "status": true,
+          "gender": "Gender fluid",
+          "updated_at": "2024-01-30 16:12:51",
+          "created_at": "2024-01-30 16:12:51",
+          "birthday": "1135522949085",
+          "owner": {
+            "name": "Quinn Trantow"
+          },
+          "likes_count": 55,
+          "photos_count": 85
+        },
+        {
+          "id": "165",
+          "name": "Siberian",
+          "image": "https://placekitten.com/200/202",
+          "description": "Versus demonstro ipsum umerus adduco utique averto nulla tolero. Placeat voro strues voluptatibus arguo. Amoveo spiculum tener.",
+          "coat_color": "blue",
+          "eye_color": "orange",
+          "breed": "Norwegian Forest Cat",
+          "origin": "Niger",
+          "weight": 27.219224385917187,
+          "height": 7.095644501969218,
+          "user_id": 43,
+          "status": true,
+          "gender": "Male to female transsexual woman",
+          "updated_at": "2024-01-30 16:12:51",
+          "created_at": "2024-01-30 16:12:51",
+          "birthday": "1304563278044",
+          "owner": {
+            "name": "Quinn Trantow"
+          },
+          "likes_count": 29,
+          "photos_count": 1
+        }
+      ],
+      "total_items": 9,
+      "total_pages": 2
+    }
+  }
+}

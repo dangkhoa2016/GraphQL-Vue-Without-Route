@@ -1,0 +1,114 @@
+<template>
+
+  <svg id="earWNOybudZ1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 1080" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" style="background-color: #fff;">
+    <line id="earWNOybudZ2" x1="265.85" y1="892.49" x2="773.68" y2="892.49" transform="matrix(.9 0 0 1 39.9765 0)" fill="none" stroke="#e2e2f2" stroke-width="28.3465" stroke-linecap="round" stroke-miterlimit="10" />
+    <g transform="translate(.000001 7)">
+      <g id="earWNOybudZ4" transform="translate(0 0.000001)">
+        <path id="earWNOybudZ5" d="M284.275223,668.001133v176.357879" transform="matrix(.939693-.34202 0.34202 0.939693-114.997363 137.457861)" fill="none" stroke="#d48533" stroke-width="55" stroke-linecap="round" />
+        <path id="earWNOybudZ6" d="M284.275223,668.001133v176.357879" transform="matrix(.939693-.34202 0.34202 0.939693 118.894863 137.675061)" fill="none" stroke="#d48533" stroke-width="55" stroke-linecap="round" />
+      </g>
+      <g id="earWNOybudZ7" transform="translate(0 0.000001)">
+        <path id="earWNOybudZ8" d="M284.275223,668.001133v176.357879" transform="matrix(.939693 0.34202-.34202 0.939693 341.800462-56.912078)" fill="none" stroke="#eba13d" stroke-width="55" stroke-linecap="round" />
+        <path id="earWNOybudZ9" d="M284.275223,668.001133v176.357879" transform="matrix(.939693 0.34202-.34202 0.939693 575.976023-57.079318)" fill="none" stroke="#eba13d" stroke-width="55" stroke-linecap="round" />
+      </g>
+    </g>
+    <g id="earWNOybudZ10" transform="translate(.000001 0.000001)">
+      <path
+        id="earWNOybudZ11"
+        d="M350.315426,628.025898c0,0-38.953338-79.454603-63.589766-102.288366-24.636428-26.439093-68.52797-37.446074-130.07942-39.238834"
+        transform="translate(0 1.469694)"
+        fill="none"
+        stroke="#eba13d"
+        stroke-width="55"
+        stroke-linecap="round"
+        stroke-miterlimit="10"
+      />
+      <g clip-path="url(#earWNOybudZ19)">
+        <g>
+          <rect width="397.53" height="235.61" rx="117.8" ry="117.8" transform="translate(317.83 550.08)" fill="#eba13d" />
+          <path
+            d="M347.36175,572.268255l6.954535,17.883559c8.344725,24.863977,33.698933,66.259335,50.932648,58.369201c12.399903-7.439942,5.250078-47.010968-5.909922-79.770968L387.519246,538.77492Z"
+            transform="matrix(.864411 0.129583-.129583 0.864411 125.848136 21.359884)"
+            fill="#d48533"
+          />
+          <path
+            d="M451.311165,546.692887l3.688175,11.359154c0,0,27.856595,78.438778,50.473932,73.479852c13.494443-3.715861,4.883674-46.786719-6.286326-79.536719l-3.979253-13.30086Z"
+            transform="matrix(.863825 0.129495-.129495 0.863825 136.24337 5.839895)"
+            fill="#d48533"
+          />
+          <path
+            d="M395.152823,551.577509l4.133301,12.813232c0,0,32.239747,108.705814,61.172853,103.332523c17.773194-5.786621-1.939873-67.529144-16.119873-109.119144l-5.786622-20.253174Z"
+            transform="matrix(.897658 0.134567-.134567 0.897658 121.297781-21.638787)"
+            fill="#d48533"
+          />
+        </g>
+        <clipPath id="earWNOybudZ19"><rect width="397.53" height="235.61" rx="117.8" ry="117.8" transform="translate(317.83 550.08)" fill="none" /></clipPath>
+      </g>
+      <circle id="earWNOybudZ21" r="21.22" transform="translate(661.343185 653.52208)" fill="#ffdf45" />
+      <path d="M501.76,550.08c0,0,22.47,43.69,88.35,60c27,5.54,53,12.76,108.83-3.55" fill="none" stroke="#ac1515" stroke-width="23" stroke-linecap="round" stroke-miterlimit="10" />
+      <g transform="translate(.000001 0.000001)">
+        <g id="earWNOybudZ24" transform="translate(.000001-6)">
+          <g id="earWNOybudZ25" transform="translate(.000001 0)">
+            <path d="M600.57,401.8c11.21,34.49-2.22,69.77-30,78.81s-59.4-11.61-70.57-46.1c-16.62-51.14,2.44-100.84,20.9-106.84c16.98-5.54,62.94,22.66,79.67,74.13Z" fill="#eba13d" />
+            <path d="M589.61,402.45c8.83,27.16-1.74,54.94-23.62,62.05s-46.77-9.14-55.6-36.3c-13.09-40.26,1.92-79.39,16.45-84.12c13.42-4.36,49.6,17.84,62.77,58.37Z" fill="#d48533" />
+          </g>
+          <g id="earWNOybudZ28" transform="translate(.000001 0)">
+            <path d="M676.83,401.8c-11.21,34.49,2.22,69.77,30,78.81s59.39-11.61,70.61-46.1c16.62-51.14-2.44-100.84-20.9-106.84-17.02-5.54-62.98,22.66-79.71,74.13Z" fill="#eba13d" />
+            <path d="M687.78,402.45c-8.82,27.16,1.75,54.94,23.63,62.05s46.77-9.14,55.6-36.3c13.08-40.26-1.92-79.39-16.46-84.12-13.41-4.36-49.55,17.84-62.77,58.37Z" fill="#d48533" />
+          </g>
+        </g>
+        <path d="M795.19,478.25c0,86-69.68,133-155.63,133s-155.63-47-155.63-133s83.24-150,155.63-150c70.71.04,155.63,64.04,155.63,150Z" fill="#eba13d" />
+        <g id="earWNOybudZ32" transform="translate(26.000001-3)">
+          <g transform="translate(-2 9)">
+            <path
+              d="M-23.84,0c0-13.166468,10.673532-23.84,23.84-23.84s23.84,10.673532,23.84,23.84-10.673532,23.84-23.84,23.84-23.84-10.673532-23.84-23.84Z"
+              transform="matrix(0 1-1 0 578.069977 455.2405)"
+              fill="#33281b"
+              stroke="#33281b"
+              stroke-width="6.28868"
+              stroke-miterlimit="10"
+            />
+            <rect id="earWNOybudZ35" width="69.758535" height="37.00718" rx="0" ry="0" transform="matrix(.803622 0 0 0.736218 549.719602 399.923063)" fill="#eba13d" stroke-width="0" />
+            <rect id="earWNOybudZ36" width="69.758535" height="37.00718" rx="0" ry="0" transform="matrix(.803622 0 0-.746472 549.719602 510.639729)" fill="#eba13d" stroke-width="0" />
+          </g>
+          <g transform="translate(122 9)">
+            <path
+              d="M-23.84,0c0-13.166468,10.673532-23.84,23.84-23.84s23.84,10.673532,23.84,23.84-10.673532,23.84-23.84,23.84-23.84-10.673532-23.84-23.84Z"
+              transform="matrix(0 1-1 0 578.069977 455.2405)"
+              fill="#33281b"
+              stroke="#33281b"
+              stroke-width="6.28868"
+              stroke-miterlimit="10"
+            />
+            <rect id="earWNOybudZ39" width="69.758535" height="37.00718" rx="0" ry="0" transform="matrix(.803622 0 0 0.736218 549.719602 399.923063)" fill="#eba13d" stroke-width="0" />
+            <rect id="earWNOybudZ40" width="69.758535" height="37.00718" rx="0" ry="0" transform="matrix(.803622 0 0-.746472 549.719602 510.639729)" fill="#eba13d" stroke-width="0" />
+          </g>
+          <g transform="translate(-1 3.000001)">
+            <line x1="574.14" y1="508.6" x2="459.05" y2="492.68" fill="none" stroke="#33281b" stroke-width="7.08661" stroke-linecap="round" stroke-miterlimit="10" />
+            <line id="earWNOybudZ43" x1="459.05" y1="535.65" x2="574.14" y2="519.72" fill="none" stroke="#33281b" stroke-width="7.08661" stroke-linecap="round" stroke-miterlimit="10" />
+          </g>
+          <g transform="translate(1.000001 0)">
+            <line x1="702.24" y1="511.92" x2="817.33" y2="495.99" fill="none" stroke="#33281b" stroke-width="7.08661" stroke-linecap="round" stroke-miterlimit="10" />
+            <line id="earWNOybudZ46" x1="817.33" y1="538.96" x2="702.24" y2="523.03" fill="none" stroke="#33281b" stroke-width="7.08661" stroke-linecap="round" stroke-miterlimit="10" />
+          </g>
+          <g transform="translate(.472873 0)">
+            <path d="M691.9,521.63c0,23.1-22.65,46.84-50.59,46.84s-50.59-23.74-50.59-46.84c0-16,22.65-36.82,50.59-36.82s50.59,20.54,50.59,36.82Z" transform="translate(-4 0)" fill="#fff" />
+            <g transform="translate(0 0.000001)">
+              <path d="M662.35,506.66c0,4.37-8,12.25-17.88,12.25s-17.88-7.88-17.88-12.25s8-7.91,17.88-7.91s17.88,3.54,17.88,7.91Z" transform="translate(-7 0)" fill="#33281b" />
+              <path
+                d="M644,518.91c-.213312,8.38793-7.074358,15.076713-15.465,15.076713s-15.251688-6.688783-15.465-15.076713"
+                transform="translate(-7 0)"
+                fill="none"
+                stroke="#33281b"
+                stroke-width="6.5"
+                stroke-linecap="round"
+                stroke-miterlimit="10"
+              />
+              <path d="M644,518.91c0,8.543845,6.926155,15.47,15.47,15.47s15.47-6.926155,15.47-15.47" transform="translate(-7 0)" fill="none" stroke="#33281b" stroke-width="6.5" stroke-linecap="round" stroke-miterlimit="10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+</template>

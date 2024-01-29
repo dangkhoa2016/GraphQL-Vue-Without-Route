@@ -1,0 +1,11 @@
+{
+  "data": {
+    "toggleStatusCat": {
+      "id": "1",
+      "name": "Japanese Bobtail",
+      "image": "https://placekitten.com/200/204",
+      "status": true,
+      "likes_count": 67
+    }
+  }
+}
