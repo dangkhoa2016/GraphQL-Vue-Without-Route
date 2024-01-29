@@ -1,0 +1,19 @@
+{
+  "data": {
+    "cat": {
+      "id": "1",
+      "name": "Peterbald",
+      "image": "https://placekitten.com/500",
+      "likes_count": 93,
+      "birthday": "1432278211755",
+      "breed": "Abyssinian",
+      "status": true,
+      "user_id": 28,
+      "updated_at": "2024-01-23 08:36:41",
+      "created_at": "2024-01-23 08:36:41",
+      "owner": {
+        "name": "Ada Harber-Spencer"
+      }
+    }
+  }
+}

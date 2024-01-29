@@ -1,0 +1,11 @@
+{
+  "data": {
+    "toggleStatusPhoto": {
+      "id": "31",
+      "title": "Chevrolet Jetta",
+      "url": "https://loremflickr.com/640/480?lock=4693557992488960",
+      "status": false,
+      "likes_count": 28
+    }
+  }
+}

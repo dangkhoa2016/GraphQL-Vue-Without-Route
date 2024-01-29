@@ -1,0 +1,90 @@
+{
+  "data": {
+    "users": {
+      "items": [
+        {
+          "id": "1",
+          "name": "SHYANNE VEUM",
+          "email": "shyanne_veum77@hotmail.com",
+          "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1178.jpg",
+          "followed": false,
+          "country": "Afghanistan",
+          "role": "user",
+          "status": true,
+          "updated_at": 1706631171000,
+          "created_at": 1684078129171,
+          "likes_count": 0,
+          "cats_count": 0,
+          "photos_count": 0,
+          "followers_count": 4
+        },
+        {
+          "id": "2",
+          "name": "COOPER KRIS-RUNTE",
+          "email": "cooper_kris-runte12@hotmail.com",
+          "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/109.jpg",
+          "followed": false,
+          "country": "India",
+          "role": "admin",
+          "status": true,
+          "updated_at": 1706631171000,
+          "created_at": 1700001654333,
+          "likes_count": 10971,
+          "cats_count": 4,
+          "photos_count": 225,
+          "followers_count": 1
+        },
+        {
+          "id": "3",
+          "name": "BAILEE WALSH",
+          "email": "bailee0@gmail.com",
+          "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/655.jpg",
+          "followed": true,
+          "country": "Svalbard & Jan Mayen Islands",
+          "role": "user",
+          "status": true,
+          "updated_at": 1706631171000,
+          "created_at": 1692058078319,
+          "likes_count": 1616,
+          "cats_count": 1,
+          "photos_count": 28,
+          "followers_count": 14
+        },
+        {
+          "id": "4",
+          "name": "KIRSTEN BRAKUS",
+          "email": "kirsten.brakus@gmail.com",
+          "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/947.jpg",
+          "followed": false,
+          "country": "Eswatini",
+          "role": "admin",
+          "status": true,
+          "updated_at": 1706631171000,
+          "created_at": 1678292416535,
+          "likes_count": 22595,
+          "cats_count": 9,
+          "photos_count": 437,
+          "followers_count": 11
+        },
+        {
+          "id": "5",
+          "name": "YAZMIN LABADIE",
+          "email": "yazmin.labadie4@yahoo.com",
+          "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/616.jpg",
+          "followed": false,
+          "country": "Pakistan",
+          "role": "admin",
+          "status": true,
+          "updated_at": 1706631171000,
+          "created_at": 1699189196753,
+          "likes_count": 15163,
+          "cats_count": 8,
+          "photos_count": 283,
+          "followers_count": 1
+        }
+      ],
+      "total_items": 50,
+      "total_pages": 10
+    }
+  }
+}
