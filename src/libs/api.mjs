@@ -3,7 +3,8 @@ import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
 
 // export const endpoint = 'http://localhost:4000';
-export const endpoint = '/';
+// export const endpoint = '/';
+export const endpoint = 'https://fastify-mercurius-graphql.onrender.com';
 
 
 const instance = axios.create({ baseURL: endpoint });
