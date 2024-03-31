@@ -1,4 +1,3 @@
-
 # GraphQL Vue Without Route
 
 > 🌐 Language / Ngôn ngữ: **English** | [Tiếng Việt](README.vi.md)

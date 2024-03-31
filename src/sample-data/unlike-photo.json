@@ -1,11 +1,11 @@
 {
-  "data": {
-    "updateLikePhoto": {
-      "id": "3",
-      "title": "Christchurch International Airport",
-      "url": "https://loremflickr.com/640/480?lock=2095569237442560",
-      "status": true,
-      "likes_count": 66
-    }
-  }
+	"data": {
+		"updateLikePhoto": {
+			"id": "3",
+			"title": "Christchurch International Airport",
+			"url": "https://loremflickr.com/640/480?lock=2095569237442560",
+			"status": true,
+			"likes_count": 66
+		}
+	}
 }

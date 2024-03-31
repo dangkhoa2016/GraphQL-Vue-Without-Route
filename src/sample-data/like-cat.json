@@ -1,14 +1,14 @@
 {
-  "data": {
-    "updateLikeCat": {
-      "id": "161",
-      "name": "Scottish Fold",
-      "status": false,
-      "likes_count": 46,
-      "owner": {
-        "name": "Quinn Trantow",
-        "likes_count": 33188
-      }
-    }
-  }
+	"data": {
+		"updateLikeCat": {
+			"id": "161",
+			"name": "Scottish Fold",
+			"status": false,
+			"likes_count": 46,
+			"owner": {
+				"name": "Quinn Trantow",
+				"likes_count": 33188
+			}
+		}
+	}
 }
