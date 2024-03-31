@@ -1,11 +1,11 @@
 {
-  "data": {
-    "toggleStatusPhoto": {
-      "id": "10",
-      "title": "Toyota A4",
-      "url": "https://picsum.photos/seed/myMBDIlz/640/480",
-      "status": true,
-      "likes_count": 99
-    }
-  }
+	"data": {
+		"toggleStatusPhoto": {
+			"id": "10",
+			"title": "Toyota A4",
+			"url": "https://picsum.photos/seed/myMBDIlz/640/480",
+			"status": true,
+			"likes_count": 99
+		}
+	}
 }

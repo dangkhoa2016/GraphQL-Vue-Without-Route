@@ -1,4 +1,3 @@
-
 # GraphQL Vue Without Route
 
 ## Information

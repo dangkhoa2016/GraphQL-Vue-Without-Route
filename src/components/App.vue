@@ -1,179 +1,196 @@
 <template>
+	<main class="d-flex flex-column h-100">
+		<AppHeader :app-name="appName" />
 
-  <main class="d-flex flex-column h-100">
-    <AppHeader :app-name="appName" />
+		<div class="my-auto py-4">
+			<DynamicComponent
+				:component-name="componentName"
+				:transition-name="transitionName"
+			/>
+		</div>
 
-    <div class='my-auto py-4'>
-      <DynamicComponent :component-name="componentName" :transition-name="transitionName" />
-    </div>
+		<AppFooter :app-name="appName" />
 
-    <AppFooter :app-name="appName" />
+		<ModalUserSummary />
+		<ModalToggleStatus v-if="isAdmin" />
+		<Toast ref="toaster" :autoHideDelay="5000" />
 
-    <ModalUserSummary />
-    <ModalToggleStatus v-if='isAdmin' />
-    <Toast ref='toaster' :autoHideDelay="5000" />
-
-    <transition name="slide-up">
-      <button v-show="showScrollToTop" @click="scrollToTop"
-        class="btn btn-sm btn-outline-warning scroll-to-top">
-        <svg class='cat-stats'><use xlink:href="#scroll-top"></use></svg>
-        To top
-      </button>
-    </transition>
-  </main>
-
+		<transition name="slide-up">
+			<button
+				v-show="showScrollToTop"
+				@click="scrollToTop"
+				class="btn btn-sm btn-outline-warning scroll-to-top"
+			>
+				<svg class="cat-stats"><use xlink:href="#scroll-top"></use></svg>
+				To top
+			</button>
+		</transition>
+	</main>
 </template>
 
 <script>
-export default {
-  name: 'App',
-}
+	export default {
+		name: 'App',
+	};
 </script>
 
 <script setup>
+	import {
+		onMounted,
+		onBeforeUnmount,
+		nextTick,
+		defineAsyncComponent,
+		ref,
+		watch,
+		inject,
+	} from 'vue';
 
-  import { onMounted, onBeforeUnmount, nextTick,
-    defineAsyncComponent, ref, watch, inject } from 'vue';
+	import { scrollToTop, getComponentPath } from '/src/libs/helpers.mjs';
+	import { init as initLikesStore } from '/src/stores/toggleLikesStore.mjs';
+	import {
+		getLocalStorageItem,
+		setLocalStorageItem,
+	} from '/src/libs/localStorageHelpers.mjs';
 
-  import { scrollToTop, getComponentPath, } from '/src/libs/helpers.mjs';
-  import { init as initLikesStore } from '/src/stores/toggleLikesStore.mjs';
-  import { getLocalStorageItem, setLocalStorageItem } from '/src/libs/localStorageHelpers.mjs';
+	import DynamicComponent from './DynamicComponent.vue';
+	import AppHeader from './AppHeader.vue';
+	import AppFooter from './AppFooter.vue';
+	import Toast from './Toast.vue';
+	import ModalUserSummary from './ModalUserSummary.vue';
 
-  import DynamicComponent from './DynamicComponent.vue';
-  import AppHeader from './AppHeader.vue'
-  import AppFooter from './AppFooter.vue';
-  import Toast from './Toast.vue';
-  import ModalUserSummary from './ModalUserSummary.vue';
+	const ModalToggleStatus = defineAsyncComponent(
+		() => import('./ModalToggleStatus.vue'),
+	);
 
+	const isComponentLoaded = inject('isComponentLoaded');
+	const requireAuthenticationComponents = ['CatsList'];
 
-  const ModalToggleStatus = defineAsyncComponent(() =>
-    import('./ModalToggleStatus.vue')
-  );
+	const emitter = inject('emitter');
+	const authStore = inject('authStore');
+	const { useAuthStore } = authStore;
+	const { authInfo, isAuthenticated, isAdmin } = useAuthStore();
 
-  const isComponentLoaded = inject('isComponentLoaded');
-  const requireAuthenticationComponents = ['CatsList'];
+	const appName = 'Vue 3';
+	const toaster = ref(null);
 
-  const emitter = inject('emitter');
-  const authStore = inject('authStore');
-  const { useAuthStore } = authStore;
-  const { authInfo, isAuthenticated, isAdmin, } = useAuthStore();
+	const componentName = ref('');
+	const transitionName = ref('just-fade');
 
-  const appName = 'Vue 3';
-  const toaster = ref(null);
+	const showScrollToTop = ref(false);
 
-  const componentName = ref('');
-  const transitionName = ref('just-fade');
+	const checkScroll = () => {
+		showScrollToTop.value = window.scrollY > 400;
+	};
 
-  const showScrollToTop = ref(false);
+	const handleShowComponent = (component) => {
+		if (component === componentName.value) {
+			scrollToTop();
+			return;
+		}
 
+		if (component === 'Login' && isAuthenticated.value) {
+			emitter.emit('toast', {
+				title: 'Notice',
+				message: 'You are already logged in.',
+			});
+			return;
+		}
 
-  const checkScroll = () => {
-    showScrollToTop.value = window.scrollY > 400;
-  };
+		if (requireAuthenticationComponents.includes(component)) {
+			if (!isAuthenticated.value) {
+				emitter.emit('toast', {
+					title: 'Notice',
+					message: 'Please login to see this page.',
+				});
+				component = 'Login';
+			}
+		}
 
-  const handleShowComponent = (component) => {
-    if (component === componentName.value) {
-      scrollToTop();
-      return;
-    }
+		if (
+			component === 'Login' &&
+			componentName.value === component &&
+			isComponentLoaded(getComponentPath(component, true))
+		) {
+			return;
+		}
 
-    if (component === 'Login' && isAuthenticated.value) {
-      emitter.emit('toast', { title: 'Notice', message: 'You are already logged in.' });
-      return;
-    }
+		componentName.value = '';
 
-    if (requireAuthenticationComponents.includes(component)) {
-      if (!isAuthenticated.value) {
-        emitter.emit('toast', { title: 'Notice', message: 'Please login to see this page.' });
-        component = 'Login';
-      }
-    }
+		nextTick(() => {
+			let needLogin = false;
+			if (!isAuthenticated.value && component === 'Login') needLogin = true;
+			if (component !== 'Login') {
+				setLocalStorageItem('returnPage', component);
+				needLogin = false;
+			}
 
-    if (component === 'Login' && componentName.value === component &&
-        isComponentLoaded(getComponentPath(component, true))) {
-      return;
-    }
+			setLocalStorageItem('needLogin', needLogin);
 
-    componentName.value = '';
+			componentName.value = component;
+		});
+	};
 
-    nextTick(() => {
-      let needLogin = false;
-      if (!isAuthenticated.value && component === 'Login')
-        needLogin = true;
-      if (component !== 'Login') {
-        setLocalStorageItem('returnPage', component);
-        needLogin = false;
-      }
+	const showLogin = () => {
+		emitter.emit('route-transition', 'just-fade');
+		emitter.emit('show-page', 'Login');
+	};
 
-      setLocalStorageItem('needLogin', needLogin);
+	const showHome = () => {
+		const lastVisitPage = getLocalStorageItem('returnPage') ?? 'MainPage';
+		emitter.emit('route-transition', 'just-fade');
+		emitter.emit('show-page', lastVisitPage);
+	};
 
-      componentName.value = component;
-    });
-  };
+	const checkLoginAndShow = () => {
+		const needLogin = getLocalStorageItem('needLogin');
+		if (needLogin) showLogin();
+		else showHome();
+	};
 
-  const showLogin = () => {
-    emitter.emit('route-transition', 'just-fade');
-    emitter.emit('show-page', 'Login');
-  };
+	onMounted(() => {
+		initLikesStore();
+		window.addEventListener('scroll', checkScroll);
 
-  const showHome = () => {
-    const lastVisitPage = getLocalStorageItem('returnPage') ?? 'MainPage';
-    emitter.emit('route-transition', 'just-fade');
-    emitter.emit('show-page', lastVisitPage);
-  };
+		emitter.on('toast', ({ title, message, color }) => {
+			if (toaster.value) toaster.value.pushToast(title, message, color);
+		});
 
-  const checkLoginAndShow = () => {
-    const needLogin = getLocalStorageItem('needLogin');
-    if (needLogin)
-      showLogin();
-    else
-      showHome();
-  };
+		emitter.on('route-transition', (transition) => {
+			transitionName.value = transition;
+		});
 
+		emitter.on('show-page', handleShowComponent);
 
-  onMounted(() => {
-    initLikesStore();
-    window.addEventListener('scroll', checkScroll);
+		const loading = document.getElementById('loading');
+		loading.addEventListener('transitionend', () => {
+			loading.style.display = 'none';
 
-    emitter.on('toast', ({ title, message, color }) => {
-      if (toaster.value)
-        toaster.value.pushToast(title, message, color);
-    });
+			checkLoginAndShow();
+		});
+		loading.classList.add('fade-out');
+	});
 
-    emitter.on('route-transition', (transition) => {
-      transitionName.value = transition;
-    });
+	onBeforeUnmount(() => {
+		emitter.off('toast');
+		emitter.off('route-transition');
+		emitter.off('show-page', handleShowComponent);
+		window.removeEventListener('scroll', checkScroll);
+	});
 
-    emitter.on('show-page', handleShowComponent);
+	watch(
+		() => authInfo.value,
+		(newVal) => {
+			if (newVal) {
+				if (componentName.value === 'Login') {
+					setLocalStorageItem('needLogin', false);
+					showHome();
+				}
 
-    const loading = document.getElementById('loading');
-    loading.addEventListener('transitionend', () => {
-      loading.style.display = 'none';
+				return;
+			}
 
-      checkLoginAndShow();
-    });
-    loading.classList.add('fade-out');
-  });
-
-  onBeforeUnmount(() => {
-    emitter.off('toast');
-    emitter.off('route-transition');
-    emitter.off('show-page', handleShowComponent);
-    window.removeEventListener('scroll', checkScroll);
-  });
-
-  watch(() => authInfo.value, (newVal) => {
-    if (newVal) {
-      if (componentName.value === 'Login') {
-        setLocalStorageItem('needLogin', false);
-        showHome();
-      }
-
-      return;
-    }
-
-    if (requireAuthenticationComponents.includes(componentName.value))
-      showLogin();
-  });
-
+			if (requireAuthenticationComponents.includes(componentName.value))
+				showLogin();
+		},
+	);
 </script>
