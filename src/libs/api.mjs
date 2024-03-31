@@ -3,7 +3,8 @@ import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
 
 // export const endpoint = 'http://localhost:4000';
-export const endpoint = '/';
+// export const endpoint = '/';
+export const endpoint = 'https://3722e83f-b183-42ff-bbab-49bf5b233c78-00-nmm4ozqbu2qr.kirk.replit.dev';
 
 
 const instance = axios.create({ baseURL: endpoint });
